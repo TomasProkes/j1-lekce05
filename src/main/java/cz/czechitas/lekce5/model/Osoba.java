@@ -6,8 +6,11 @@ public class Osoba {
     private String jmeno;
     private String prijmeni;
     private String rodneCislo;
-
+    private Adresa adresa;
     private Telefon telefon;
+
+    private String soukromyEmail;
+    private String pracovniEmail;
 
     public String getJmeno() {
         return jmeno;
@@ -58,6 +61,30 @@ public class Osoba {
 
     public void setTelefon(Telefon telefon) {
         this.telefon = telefon;
+    }
+
+    public Adresa getAdresa() {
+        return adresa;
+    }
+
+    public void setAdresa(Adresa adresa) {
+        this.adresa = adresa;
+    }
+
+    public String getSoukromyEmail() {
+        return soukromyEmail;
+    }
+
+    public void setSoukromyEmail(String soukromyEmail) {
+        this.soukromyEmail = soukromyEmail;
+    }
+
+    public String getPracovniEmail() {
+        return pracovniEmail;
+    }
+
+    public void setPracovniEmail(String pracovniEmail) {
+        this.pracovniEmail = pracovniEmail;
     }
 
     public String toString() {
