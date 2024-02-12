@@ -9,6 +9,10 @@ public class Osoba {
 
     private Telefon telefon;
 
+    public String getJmeno() {
+        return jmeno;
+    }
+
     public void setJmeno(String jmeno) {
         Objects.requireNonNull(jmeno);
         if (jmeno.isBlank()) {
@@ -16,10 +20,6 @@ public class Osoba {
             return;
         }
         this.jmeno = jmeno;
-    }
-
-    public String getJmeno() {
-        return jmeno;
     }
 
     public String getPrijmeni() {
